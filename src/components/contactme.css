@@ -1,0 +1,64 @@
+.contactme-container {
+    position: relative;
+    margin-top: 8rem;
+    padding: 1.5rem;
+}
+
+.contactme-container h3 {
+    position: relative;
+    font-size: 100px;
+    font-weight: 600;
+    line-height: 90px;
+    margin-bottom: 5rem;
+}
+
+.contactme-container p {
+    margin-bottom: 2.5rem;
+    font-size: 17px;
+}
+
+.star img{
+    top: -70px;
+    right: 30px;
+    width: 70px;
+    position: absolute;
+    z-index: 99;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-buttons a{
+    padding: .6rem 3rem;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 15px;
+}
+.contact-buttons a:first-child{
+    background-color: var(--first-color);
+    color: var(--white);
+    transition: .3s;
+}
+.contact-buttons a:first-child:hover{
+    box-shadow: rgb(1, 194, 143) 0px 10px 20px -10px;
+}
+
+.contact-buttons a:last-child{
+    border: 1px solid var(--snd-color);
+    color: var(--snd-color);
+    transition: .3s;
+}
+.contact-buttons a:last-child:hover{
+    color: var(--white);
+    background-color: var(--snd-color);
+    box-shadow: rgba(88, 5, 255, 0.761) 0px 15px 30px -10px;
+}
+
+@media screen and (min-width: 768px) {
+    .contactme-container {
+        margin-top: 5rem;
+    }
+
+  }

@@ -1,0 +1,159 @@
+button {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
+
+button:hover {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+
+}
+
+.cards-container {
+  background-color: var(--back);
+  padding: 15rem 3rem 0 3rem;
+  margin-top: -10rem;
+  padding-bottom: 8rem;
+}
+
+.cards-header {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.cards-header__blob {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cards-header__info {
+  margin-bottom: 6rem;
+}
+
+.cards-header__info h3 {
+  font-size: 28px;
+  letter-spacing: -0.4px;
+  margin-bottom: 20px;
+}
+
+.cards-header__info p {
+  max-width: 350px;
+  font-size: 15px;
+  color: rgb(92, 88, 88);
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.cards-header__info a {
+  font-size: 15px;
+  color: rgb(92, 88, 88);
+  text-decoration: underline; 
+  text-decoration-color: var(--first-color);
+  text-underline-offset: 6px;
+  transition: 300ms;
+}
+.cards-header__info a:hover {
+  background-color: #e3efee
+}
+
+.slider-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 15px;
+  margin-bottom: 2.5rem;
+} 
+
+.slider-buttons button img {
+  filter: var(--icon-gray);
+  width: 20px;
+}
+
+.slider-buttons img:last-child {
+  filter: var(--icon-gray-alt)
+
+}
+
+.slide-wrapper {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.slide {
+  margin: auto;
+  max-width: 350px;
+}
+
+/* === CARD === */
+.single-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  margin: auto;
+  height: 15rem;
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.single-card:hover img {
+
+  filter: var(--icon-snd-color)
+}
+
+.single-card img {
+  width: 2rem;
+  height: 2rem;
+  filter: var(--icon-gray);
+  margin-bottom: 1rem;
+  transition: 300ms;
+}
+
+.single-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.single-card .single-text h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.single-card .single-text p {
+  font-size: 15px;
+}
+
+.single-tools {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.single-tools p {
+  
+  transition: 300ms;
+}
+
+.single-card:hover .single-tools p {
+  color: var(--snd-color)
+}
+
+
+@media screen and (min-width: 768px) {
+  .slide-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cards-header {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
